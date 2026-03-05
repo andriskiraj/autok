@@ -32,5 +32,12 @@ namespace autok
         {
             this.Close();
         }
+
+        private void modositas_Click(object sender, RoutedEventArgs e)
+        {
+            AutoModositas modositas = new AutoModositas();
+            modositas.Show();
+            this.Close();
+        }
     }
 }
