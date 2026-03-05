@@ -20,5 +20,17 @@ namespace autok
         {
             InitializeComponent();
         }
+
+        private void uj_Click(object sender, RoutedEventArgs e)
+        {
+            UjAuto ujAuto = new UjAuto();
+            ujAuto.Show();
+            this.Close();
+        }
+
+        private void bezar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

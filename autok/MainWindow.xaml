@@ -7,7 +7,16 @@
         mc:Ignorable="d"
         Title="Autók" Height="450" Width="800">
     <Grid>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="106,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="Autók" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="129" Height="67" FontSize="40"/>
+        <Button x:Name="bezar" Content="Bezár" HorizontalAlignment="Left" Margin="625,368,0,0" VerticalAlignment="Top" Height="30" Width="90" Click="bezar_Click"/>
+        <Button x:Name="uj" Content="Új" HorizontalAlignment="Left" Margin="598,63,0,0" VerticalAlignment="Top" Width="87" Click="uj_Click"/>
+        <Button x:Name="modositas" Content="Módosítás" HorizontalAlignment="Left" Margin="598,141,0,0" VerticalAlignment="Top" Width="104"/>
+        <Label Content="Üzemanyag" HorizontalAlignment="Left" Margin="38,340,0,0" VerticalAlignment="Top"/>
+        <Label Content="Szín" HorizontalAlignment="Left" Margin="215,340,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.418,0.741"/>
+        <Label Content="Típus" HorizontalAlignment="Left" Margin="215,380,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.988,0.478"/>
+        <Label Content="Km" HorizontalAlignment="Left" Margin="47,380,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="106,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="381" Height="179"/>
+        <Button x:Name="torles" Content="Törlés" HorizontalAlignment="Left" Margin="598,241,0,0" VerticalAlignment="Top" Height="26" Width="87"/>
 
     </Grid>
 </Window>
