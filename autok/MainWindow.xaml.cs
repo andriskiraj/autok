@@ -73,10 +73,7 @@ namespace autok
                 }
 
             }
-            if( rendszam =)
-            {
-
-            }
+            
             
         }
     }

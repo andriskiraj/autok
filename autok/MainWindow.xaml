@@ -19,15 +19,17 @@
             <Label Content="Szín:" HorizontalAlignment="Left" Margin="261,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.418,0.741"/>
             <Label Content="Típus:" HorizontalAlignment="Left" Margin="258,40,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.988,0.478"/>
             <Label Content="Km:" HorizontalAlignment="Left" Margin="9,40,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="uzemanyag" Content="Label" HorizontalAlignment="Left" Margin="94,0,0,0" VerticalAlignment="Top" Width="112"/>
-            <Label x:Name="km" Content="Label" HorizontalAlignment="Left" Margin="94,47,0,0" VerticalAlignment="Top" Width="112"/>
-            <Label x:Name="tipus" Content="Label" HorizontalAlignment="Left" Margin="324,40,0,0" VerticalAlignment="Top" Width="150"/>
-            <Label x:Name="szin" Content="Label" HorizontalAlignment="Left" Margin="324,0,0,0" VerticalAlignment="Top" Width="75"/>
+            <Label x:Name="uzemanyag" Content="" HorizontalAlignment="Left" Margin="94,0,0,0" VerticalAlignment="Top" Width="112"/>
+            <Label x:Name="km" Content="" HorizontalAlignment="Left" Margin="94,47,0,0" VerticalAlignment="Top" Width="112"/>
+            <Label x:Name="tipus" Content="" HorizontalAlignment="Left" Margin="324,40,0,0" VerticalAlignment="Top" Width="150"/>
+            <Label x:Name="szin" Content="" HorizontalAlignment="Left" Margin="324,0,0,0" VerticalAlignment="Top" Width="75"/>
 
         </Grid>
         <TextBox x:Name="textbox" HorizontalAlignment="Left" Margin="24,0,0,0" TextWrapping="Wrap"
                  VerticalAlignment="Center" Width="382" Height="179" SelectionChanged="rendszamm" IsReadOnly="True"/>
-        <Image x:Name="kep" HorizontalAlignment="Left" Height="179" Margin="443,128,0,0" VerticalAlignment="Top" Width="173"/>
+        <Image x:Name="kep" HorizontalAlignment="Left" Height="179" Margin="443,128,0,0" VerticalAlignment="Top" Width="173" Source="/img/suzukiswift.jpg" >
+            
+        </Image>
 
     </Grid>
 </Window>
