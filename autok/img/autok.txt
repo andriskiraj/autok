@@ -1,0 +1,3 @@
+ABC-123;Benzin;45000;Piros;Suzuki Swift
+DEF-456;Diesel;60000;Fekete;Toyota Corolla
+GHI-789;Hybrid;35000;Ezüst;Ford Focus
