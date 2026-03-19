@@ -7,29 +7,38 @@
         mc:Ignorable="d"
         Title="Autók" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/versenypalya.jpg" Opacity="1"/>
+
+        </Grid.Background>
+        <Rectangle Fill="#66000000"/>
         <Label Content="Autók" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="129" Height="67" FontSize="40"/>
-        <StackPanel HorizontalAlignment="Left" Margin="684,0,0,0" Orientation="Vertical" VerticalAlignment="Center" Height="179">
+        <StackPanel Margin="700,0,0,0" Orientation="Vertical" Height="107" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Button x:Name="uj" Content="Új"  Width="75" Click="uj_Click_1"/>
             <Button x:Name="modositas" Content="Módosítás" Margin="0,20,0,0" Width="75" Click="modositas_Click_1"/>
             <Button x:Name="torles" Content="Törlés" Margin="0,20,0,0" Width="75" Click="torles_Click"/>
         </StackPanel>
         <Button x:Name="bezar" Content="Bezár" Click="bezar_Click_1" Margin="684,375,10,10"/>
         <Grid HorizontalAlignment="Left" Height="73" VerticalAlignment="Top" Width="512" Margin="24,339,0,0">
-            <Label Content="Üzemanyag:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Label Content="Szín:" HorizontalAlignment="Left" Margin="261,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.418,0.741"/>
-            <Label Content="Típus:" HorizontalAlignment="Left" Margin="258,40,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.988,0.478"/>
-            <Label Content="Km:" HorizontalAlignment="Left" Margin="9,40,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="uzemanyag" Content="" HorizontalAlignment="Left" Margin="94,0,0,0" VerticalAlignment="Top" Width="112"/>
-            <Label x:Name="km" Content="" HorizontalAlignment="Left" Margin="94,47,0,0" VerticalAlignment="Top" Width="112"/>
-            <Label x:Name="tipus" Content="" HorizontalAlignment="Left" Margin="324,40,0,0" VerticalAlignment="Top" Width="150"/>
-            <Label x:Name="szin" Content="" HorizontalAlignment="Left" Margin="324,0,0,0" VerticalAlignment="Top" Width="75"/>
+            <Label Content="Üzemanyag:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White"/>
+            <Label Content="Szín:" HorizontalAlignment="Left" Margin="261,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.418,0.741" Foreground="White"/>
+            <Label Content="Típus:" HorizontalAlignment="Left" Margin="258,40,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.988,0.478" Foreground="White"/>
+            <Label Content="Km:" HorizontalAlignment="Left" Margin="9,40,0,0" VerticalAlignment="Top" Foreground="White"/>
+            <Label x:Name="uzemanyag" Content="" HorizontalAlignment="Left" Margin="94,0,0,0" VerticalAlignment="Top" Width="112" Foreground="White"/>
+            <Label x:Name="km" Content="" HorizontalAlignment="Left" Margin="94,47,0,0" VerticalAlignment="Top" Width="112" Foreground="White"/>
+            <Label x:Name="tipus" Content="" HorizontalAlignment="Left" Margin="324,40,0,0" VerticalAlignment="Top" Width="150" Foreground="White"/>
+            <Label x:Name="szin" Content="" HorizontalAlignment="Left" Margin="324,0,0,0" VerticalAlignment="Top" Width="75" Foreground="White"/>
 
         </Grid>
         <TextBox x:Name="textbox" HorizontalAlignment="Left" Margin="24,0,0,0" TextWrapping="Wrap"
-                 VerticalAlignment="Center" Width="382" Height="179" SelectionChanged="rendszamm" IsReadOnly="True"/>
-        <Image x:Name="kep" HorizontalAlignment="Left" Height="179" Margin="443,128,0,0" VerticalAlignment="Top" Width="173" Source="/img/suzukiswift.jpg" >
-            
-        </Image>
+                 VerticalAlignment="Center" Width="382" Height="179" SelectionChanged="rendszamm" IsReadOnly="True" Background="Transparent" />
+        <Image x:Name="kep"
+       HorizontalAlignment="Left"
+       Height="179"
+       Margin="443,128,0,0"
+       VerticalAlignment="Top"
+       Width="173"
+       Source="suzukiswift.jpg"/>
 
     </Grid>
 </Window>

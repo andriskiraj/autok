@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace autok
 {
@@ -20,6 +21,11 @@ namespace autok
         public UjAuto()
         {
             InitializeComponent();
+        }
+
+        private void hozzaad_Click(object sender, RoutedEventArgs e)
+        {
+        
         }
     }
 }

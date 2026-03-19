@@ -69,7 +69,8 @@ namespace autok
                     km.Content = adatok[2];
                     szin.Content = adatok[3];
                     tipus.Content = adatok[4];
-                    
+                    kep.Source = new BitmapImage(new Uri("suzukiswift.jpg", UriKind.RelativeOrAbsolute));
+
                 }
 
             }

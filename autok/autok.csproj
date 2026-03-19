@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="versenypalya.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="versenypalya.jpg" />
+  </ItemGroup>
+
 </Project>
