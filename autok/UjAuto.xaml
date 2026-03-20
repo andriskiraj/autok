@@ -11,16 +11,15 @@
         <Label Content="Új autó hozzáadása" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontWeight="Black" FontSize="25" Width="280"/>
         <StackPanel HorizontalAlignment="Center" Orientation="Vertical" VerticalAlignment="Center" Height="286">
             <Label Content="Az autó rendszáma:" FontWeight="Bold" FontSize="15" Height="33" Width="148"/>
-            <TextBox TextWrapping="Wrap" Text=""  Height="25" Width="126"/>
+            <TextBox x:Name="ujrendszam" TextWrapping="Wrap" Text=""  Height="25" Width="126"/>
             <Label Content="Üzemanyag:" FontWeight="Bold" FontSize="15" Height="33" Width="148"/>
-            <TextBox TextWrapping="Wrap" Text=""  Height="25" Width="126"/>
-            <Label Content="Típus" FontWeight="Bold" FontSize="15"/>
-            <TextBox TextWrapping="Wrap" Text="" Height="25" Width="126"/>
-            <Label Content="Szín" FontWeight="Bold" FontSize="15"/>
-            <TextBox TextWrapping="Wrap" Text="" Height="25" Width="126"/>
+            <TextBox x:Name="ujuzemanyag" TextWrapping="Wrap" Text=""  Height="25" Width="126"/>
             <Label Content="Km" FontWeight="Bold" FontSize="15" />
-            <TextBox x:Name="kilometer" TextWrapping="Wrap" Text="" Height="25" Width="126"/>
-
+            <TextBox x:Name="ujkilometer" TextWrapping="Wrap" Text="" Height="25" Width="126"/>
+            <Label Content="Szín" FontWeight="Bold" FontSize="15"/>
+            <TextBox x:Name="ujszin" TextWrapping="Wrap" Text="" Height="25" Width="126"/>
+            <Label Content="Típus" FontWeight="Bold" FontSize="15"/>
+            <TextBox x:Name="ujtipus" TextWrapping="Wrap" Text="" Height="25" Width="126"/>
 
         </StackPanel>
  <Button x:Name="hozzaad" Content="Hozzáad" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,343,0,0" Click="hozzaad_Click"/>

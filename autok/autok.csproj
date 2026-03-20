@@ -9,10 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="suzukiswift.jpg" />
     <None Remove="versenypalya.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="suzukiswift.jpg" />
     <Resource Include="versenypalya.jpg" />
   </ItemGroup>
 

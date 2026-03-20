@@ -18,18 +18,20 @@ namespace autok
     /// </summary>
     public partial class MainWindow : Window
     {
+
         string[] sorok;
         public MainWindow()
         {
+
             InitializeComponent();
             sorok = File.ReadAllLines("autok.txt");
 
             foreach (string sor in sorok)
             {
                 string[] adatok = sor.Split(';');
-                textbox.AppendText(adatok[0] + "\n");
-            }
 
+                listbox.Items.Add(adatok[0]);
+            }
         }
 
         private void uj_Click_1(object sender, RoutedEventArgs e)
@@ -41,23 +43,67 @@ namespace autok
 
         private void modositas_Click_1(object sender, RoutedEventArgs e)
         {
-            AutoModositas modositas = new AutoModositas();
-            modositas.Show();
-            this.Close();
+            if (listbox.SelectedItem == null) return;
+
+            string rendszam = listbox.SelectedItem.ToString();
+
+            foreach (string sor in sorok)
+            {
+                string[] adatok = sor.Split(';');
+
+                if (adatok[0] == rendszam)
+                {
+                    AutoModositas ablak = new AutoModositas(adatok);
+                    ablak.Show();
+                    this.Close();
+                }
+            }
         }
 
         private void torles_Click(object sender, RoutedEventArgs e)
         {
 
+            if (listbox.SelectedItem == null) return;
+
+            string rendszam = listbox.SelectedItem.ToString();
+
+            string[] sorok = File.ReadAllLines("autok.txt");
+            List<string> ujsorok = new List<string>();
+
+            foreach (string sor in sorok)
+            {
+                string[] adatok = sor.Split(';');
+
+                if (adatok[0] != rendszam)
+                {
+                    ujsorok.Add(sor);
+                }
+            }
+
+            File.WriteAllLines("autok.txt", ujsorok);
+
+            MessageBox.Show("Sikeres törlés!");
+
+            // Lista frissítése
+            listbox.Items.Clear();
+
+            foreach (string sor in ujsorok)
+            {
+                string[] adatok = sor.Split(';');
+                listbox.Items.Add(adatok[0]);
+
+            }
         }
 
         private void bezar_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
-        private void rendszamm(object sender, RoutedEventArgs e)
+        private void listbox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string rendszam = textbox.SelectedText.Trim();
+            if (listbox.SelectedItem == null) return;
+
+            string rendszam = listbox.SelectedItem.ToString();
 
             foreach (string sor in sorok)
             {
@@ -69,13 +115,33 @@ namespace autok
                     km.Content = adatok[2];
                     szin.Content = adatok[3];
                     tipus.Content = adatok[4];
-                    kep.Source = new BitmapImage(new Uri("suzukiswift.jpg", UriKind.RelativeOrAbsolute));
-
                 }
+                string tipus2 = adatok[4];
 
+                if (tipus2 == "Suzuki Swift")
+                {
+                    kep.Source = new BitmapImage(new Uri("suzukiswift.png", UriKind.Relative));
+                }
+                else if (tipus2 == "Toyota Corolla")
+                {
+                    kep.Source = new BitmapImage(new Uri("toyotacorolla.jpg", UriKind.Relative));
+                }
+                else if (tipus2 == "Volkswagen Golf")
+                {
+                    kep.Source = new BitmapImage(new Uri("volkswagengolf.jpg", UriKind.Relative));
+                }
+                else 
+                {
+                    kep.Source = null;
+                }
             }
             
-            
+            {
+
+            }
         }
+
     }
+
 }
+            

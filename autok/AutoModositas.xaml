@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:autok"
         mc:Ignorable="d"
-        Title="AutoModositas" Height="450" Width="800">
+        Title="UjAuto" Height="400" Width="300">
     <Grid>
-        
+
+        <Label Content="Meglévő autó változtatása" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontWeight="Black" FontSize="20" Width="280" Height="39"/>
+        <StackPanel HorizontalAlignment="Center" Orientation="Vertical" VerticalAlignment="Center" Height="286">
+            <Label Content="Az autó rendszáma:" FontWeight="Bold" FontSize="15" Height="33" Width="148"/>
+            <TextBox x:Name="rendszaam" TextWrapping="Wrap" Text=""  Height="25" Width="126"/>
+            <Label Content="Üzemanyag:" FontWeight="Bold" FontSize="15" Height="33" Width="148"/>
+            <TextBox x:Name="uzemanyag" TextWrapping="Wrap" Text=""  Height="25" Width="126"/>
+            <Label Content="Km" FontWeight="Bold" FontSize="15" />
+            <TextBox x:Name="km" TextWrapping="Wrap" Text="" Height="25" Width="126"/>
+            <Label Content="Szín" FontWeight="Bold" FontSize="15"/>
+            <TextBox x:Name="szin" TextWrapping="Wrap" Text="" Height="25" Width="126"/>
+            <Label Content="Típus" FontWeight="Bold" FontSize="15"/>
+            <TextBox x:Name="tipus" TextWrapping="Wrap" Text="" Height="25" Width="126"/>
+
+
+        </StackPanel>
+        <Button x:Name="valtoztat" Content="Változtat" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,343,0,0" Click="valtoztat_Click"/>
+
     </Grid>
 </Window>

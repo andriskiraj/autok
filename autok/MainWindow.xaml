@@ -30,15 +30,13 @@
             <Label x:Name="szin" Content="" HorizontalAlignment="Left" Margin="324,0,0,0" VerticalAlignment="Top" Width="75" Foreground="White"/>
 
         </Grid>
-        <TextBox x:Name="textbox" HorizontalAlignment="Left" Margin="24,0,0,0" TextWrapping="Wrap"
-                 VerticalAlignment="Center" Width="382" Height="179" SelectionChanged="rendszamm" IsReadOnly="True" Background="Transparent" />
+        <ListBox x:Name="listbox" HorizontalAlignment="Left" Margin="24,0,0,0" VerticalAlignment="Center" Width="382" Height="179" SelectionChanged="listbox_SelectionChanged" Background="Transparent"/>
         <Image x:Name="kep"
        HorizontalAlignment="Left"
        Height="179"
        Margin="443,128,0,0"
        VerticalAlignment="Top"
-       Width="173"
-       Source="suzukiswift.jpg"/>
+       Width="173"/>
 
     </Grid>
 </Window>
